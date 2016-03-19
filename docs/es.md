@@ -9,7 +9,7 @@ El modulo “Cache” implementa los siguientes métodos: has, set, get, remove,
  
 ###Cache.has
 Recibe una “Key”, luego verifica si esta existe, su resultado puede ser “true” o “false”.
-```
+```js
 window._cache.set("my-key", {});
 // 1
 window._cache.has("my-key");
@@ -18,28 +18,28 @@ window._cache.has("my-key");
 
 ###Cache.set
 Recibe una “Key” y un “Value”, luego almacena el valor con la clave correspondiente, su resultado puede ser el nuevo length del storage provider o null en caso de fallar.
-```
+```js
 window._cache.set("my-new-key", myNewValue);
 // 2
 ```
 
 ###Cache.get 
 Recibe una “Key”,  luego obtiene el valor según la clave, su resultado puede ser cualquiera según lo almacenado o null en caso de fallar. 
-```
+```js
 window._cache.get("my-key");
 // {}
 ```
 
 ###Cache.remove 
 Elimina un elemento almacenado en nuestro storage provider, su resultado puede ser el nuevo length del storage provider o null en caso de fallar.
-```
+```js
 window._cache.remove("my-key");
 // 1
 ```
 
 ###Cache.clean 
 Elimina todo los elementos almacenados en nuestro storage provider, su resultado puede ser el nuevo length del storage provider o null en caso de fallar.
-```
+```js
 window._cache.clean();
 // 0
 ```

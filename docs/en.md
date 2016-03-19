@@ -9,7 +9,7 @@ The "Cache" module implements the following methods: has, set, get, remove, clea
 
 ###Cache.has 
 Receives a "Key", then check if it exists, the result can be true, false or null in case of failure.
-```
+```js
 window._cache.set("my-key", {});
 // 1
 window._cache.has("my-key");
@@ -18,28 +18,28 @@ window._cache.has("my-key");
 
 ###Cache.set 
 Receives a "Key" and "Value", then stores the value with the corresponding key, the result can be the new length of the storage provider or null in case of failure.
-```
+```js
 window._cache.set("my-new-key", myNewValue);
 // 2
 ```
 
 ###Cache.get 
 Receives a "Key", then the value obtained as the key, the result can be stored value or null in case of failure.
-```
+```js
 window._cache.get("my-key");
 // {}
 ```
 
 ###Cache.remove
 Remove an item stored in our storage provider, the result can be the new length of the storage provider or null in case of failure.
-```
+```js
 window._cache.remove("my-key");
 // 1
 ```
 
 ###Cache.clean 
 Removes all items stored in our storage provider, the result can be the new length of the storage provider or null in case of failure.
-```
+```js
 window._cache.clean();
 // 0
 ```
